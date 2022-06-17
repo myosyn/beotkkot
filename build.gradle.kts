@@ -30,14 +30,14 @@ val shadowMe: Configuration by configurations.creating {
 
 dependencies {
     shadowMe("ch.qos.logback:logback-classic:1.2.11")
-    shadowMe("org.codehaus.groovy:groovy:3.0.10")
+    shadowMe("org.codehaus.groovy:groovy:3.0.11")
 
     shadowMe("dev.kord:kord-core:0.8.x-SNAPSHOT")
     shadowMe("com.kotlindiscord.kord.extensions:kord-extensions:1.5.3-SNAPSHOT")
     shadowMe("dev.schlaubi.lavakord:kord:3.6.2")
 
     api("se.michaelthelin.spotify:spotify-web-api-java:7.1.0")
-    shadowMe("com.google.apis:google-api-services-youtube:v3-rev20220418-1.32.1")
+    shadowMe("com.google.apis:google-api-services-youtube:v3-rev20220612-1.32.1")
 
     shadowMe(platform("io.ktor:ktor-bom:2.0.1"))
     shadowMe("io.ktor:ktor-serialization-kotlinx-json-jvm")
