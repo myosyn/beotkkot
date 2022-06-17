@@ -6,6 +6,7 @@ import com.kotlindiscord.kord.extensions.extensions.Extension
 import com.kotlindiscord.kord.extensions.extensions.publicMessageCommand
 import com.kotlindiscord.kord.extensions.extensions.publicSlashCommand
 import com.kotlindiscord.kord.extensions.types.respond
+import dev.kord.cache.api.data.description
 import dev.kord.common.entity.Permission
 
 class Disconnect : Extension() {
@@ -14,12 +15,15 @@ class Disconnect : Extension() {
     override suspend fun setup() {
         publicMessageCommand {
             name = "disconnect"
+
             check {
                 anyGuild()
                 hasPermission(Permission.Administrator)
             }
 
             action {
+                val guild = getGuild()?.asGuildOrNull()
+
 
             }
         }
