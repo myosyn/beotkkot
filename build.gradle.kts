@@ -40,7 +40,7 @@ dependencies {
     api("se.michaelthelin.spotify:spotify-web-api-java:7.1.0")
     api("com.google.apis:google-api-services-youtube:v3-rev20220612-1.32.1")
 
-    shadowMe(platform("io.ktor:ktor-bom:2.0.1"))
+    shadowMe(platform("io.ktor:ktor-bom:2.0.2"))
     shadowMe("io.ktor:ktor-serialization-kotlinx-json-jvm")
     shadowMe("io.ktor:ktor-client-core-jvm")
     shadowMe("io.ktor:ktor-client-cio-jvm")
