@@ -8,36 +8,22 @@ import com.kotlindiscord.kord.extensions.extensions.publicSlashCommand
 import com.kotlindiscord.kord.extensions.types.respond
 import dev.kord.cache.api.data.description
 import dev.kord.common.entity.Permission
+import io.github.qbosst.kordex.commands.hybrid.publicHybridCommand
 
 class Disconnect : Extension() {
     override val name: String = "Disconnect"
 
     override suspend fun setup() {
-        publicMessageCommand {
+        publicHybridCommand {
             name = "disconnect"
+            description = "Disconnects the bot from the voice channel"
 
             check {
-                anyGuild()
-                hasPermission(Permission.Administrator)
+
             }
 
             action {
-                val guild = getGuild()?.asGuildOrNull()
-
-
-            }
-        }
-        publicSlashCommand {
-            name = "disconnect"
-            description = "Disconnects the bot from the Voice Channel."
-
-            check {
-                anyGuild()
-                hasPermission(Permission.Administrator)
-            }
-
-            action {
-
+                val targetVoiceChannel = member
             }
         }
     }
