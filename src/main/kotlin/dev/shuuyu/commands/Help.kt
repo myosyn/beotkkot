@@ -33,13 +33,33 @@ class Help : Extension() {
                         }
                         field {
                             name = "**play**"
-                            value = "Plays the specified link or video from the "
+                            value = "Plays the specified link or video from Youtube or Spotify."
+                        }
+                        field {
+                            name = "**skip**"
+                            value = "Skips the specified amount of songs."
                         }
                     }
 
                     // Page 2
                     page {
                         title = "General Commands"
+                        field {
+                            name = "**ping**"
+                            value = "Checks your latency between you and the bot"
+                        }
+                        field {
+
+                        }
+                    }
+
+                    // Page 3
+                    page {
+                        title = "Configurations"
+                        field {
+                            name = "**config**"
+                            value = "Sets all configurations to be set in a specific area."
+                        }
                     }
                 }
 
