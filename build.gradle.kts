@@ -33,7 +33,7 @@ dependencies {
 
     implementation("org.litote.kmongo:kmongo:4.6.1")
 
-    shadowMe("dev.kord:kord-core:0.8.x-SNAPSHOT")
+    shadowMe("dev.kord:kord-core:0.8.0-M14")
     shadowMe("com.kotlindiscord.kord.extensions:kord-extensions:1.5.4-SNAPSHOT")
     shadowMe("io.github.qbosst:kordex-hybrid-commands:1.0.3-SNAPSHOT")
     shadowMe("dev.schlaubi.lavakord:kord:3.6.2")
