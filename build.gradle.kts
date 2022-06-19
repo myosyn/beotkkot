@@ -31,7 +31,7 @@ dependencies {
     shadowMe("ch.qos.logback:logback-classic:1.2.11")
     shadowMe("org.codehaus.groovy:groovy:3.0.11")
 
-    implementation("org.litote.kmongo:kmongo:4.6.0")
+    implementation("org.litote.kmongo:kmongo:4.6.1")
 
     shadowMe("dev.kord:kord-core:0.8.x-SNAPSHOT")
     shadowMe("com.kotlindiscord.kord.extensions:kord-extensions:1.5.4-SNAPSHOT")
