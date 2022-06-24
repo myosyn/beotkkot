@@ -36,7 +36,7 @@ dependencies {
     shadowMe("dev.kord:kord-core:0.8.0-M14")
     shadowMe("com.kotlindiscord.kord.extensions:kord-extensions:1.5.4-SNAPSHOT")
     shadowMe("io.github.qbosst:kordex-hybrid-commands:1.0.3-SNAPSHOT")
-    shadowMe("dev.schlaubi.lavakord:kord:3.6.2")
+    shadowMe("dev.schlaubi.lavakord:kord:3.6.3")
 
     api("se.michaelthelin.spotify:spotify-web-api-java:7.1.0")
     api("com.google.apis:google-api-services-youtube:v3-rev20220612-1.32.1")
