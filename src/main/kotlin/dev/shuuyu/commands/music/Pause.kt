@@ -1,23 +1,23 @@
-package dev.shuuyu.commands
+package dev.shuuyu.commands.music
 
 import com.kotlindiscord.kord.extensions.checks.anyGuild
 import com.kotlindiscord.kord.extensions.extensions.Extension
 import com.kotlindiscord.kord.extensions.extensions.publicSlashCommand
 
-class Disconnect : Extension() {
-    override val name: String = "Disconnect"
+class Pause : Extension() {
+    override val name: String = "pause"
 
     override suspend fun setup() {
         publicSlashCommand {
-            name = "disconnect"
-            description = "Disconnects the bot from the voice channel"
+            name = "pause"
+            description = "Pauses the song that is playing"
 
             check {
                 anyGuild()
             }
 
             action {
-                val targetVoiceChannel = member
+                
             }
         }
     }

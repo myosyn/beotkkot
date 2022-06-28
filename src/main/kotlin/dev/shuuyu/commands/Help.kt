@@ -4,21 +4,20 @@ import com.kotlindiscord.kord.extensions.checks.anyGuild
 import com.kotlindiscord.kord.extensions.checks.hasPermission
 import com.kotlindiscord.kord.extensions.extensions.Extension
 import com.kotlindiscord.kord.extensions.extensions.publicSlashCommand
+import com.kotlindiscord.kord.extensions.types.respondingPaginator
 import dev.kord.common.entity.Permission
-import io.github.qbosst.kordex.commands.hybrid.publicHybridCommand
 
 class Help : Extension() {
     override val name: String = "help"
 
     override suspend fun setup() {
-        publicHybridCommand {
+        publicSlashCommand {
             name = "help"
             description = "Shows all of the commands you can execute"
 
             check {
                 anyGuild()
                 hasPermission(Permission.SendMessages)
-
             }
 
             action {

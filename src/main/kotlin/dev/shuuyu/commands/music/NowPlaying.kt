@@ -1,5 +1,6 @@
 package dev.shuuyu.commands.music
 
+import com.kotlindiscord.kord.extensions.checks.anyGuild
 import com.kotlindiscord.kord.extensions.checks.hasPermission
 import com.kotlindiscord.kord.extensions.extensions.Extension
 import dev.kord.common.entity.Permission
@@ -14,6 +15,7 @@ class NowPlaying : Extension() {
             description = "Shows the song that is being played"
 
             check {
+                anyGuild()
                 hasPermission(Permission.SendMessages)
                 requirePermissions(Permission.SendMessages)
             }

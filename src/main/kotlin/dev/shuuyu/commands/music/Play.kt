@@ -3,14 +3,13 @@ package dev.shuuyu.commands.music
 import com.kotlindiscord.kord.extensions.commands.Arguments
 import com.kotlindiscord.kord.extensions.commands.converters.impl.string
 import com.kotlindiscord.kord.extensions.extensions.Extension
-import dev.shuuyu.checks.inVoiceChannelCheck
-import io.github.qbosst.kordex.commands.hybrid.publicHybridCommand
+import com.kotlindiscord.kord.extensions.extensions.publicSlashCommand
 
 class Play : Extension() {
     override val name: String = "play"
 
     override suspend fun setup() {
-        publicHybridCommand(::PlayArguments) {
+        publicSlashCommand(::PlayArguments) {
             name = "play"
             description = "Plays the specified song."
 

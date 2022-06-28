@@ -31,9 +31,13 @@ dependencies {
     shadowMe("ch.qos.logback:logback-classic:1.2.11")
     shadowMe("org.codehaus.groovy:groovy:3.0.11")
 
-    implementation("org.litote.kmongo:kmongo:4.6.0")
+    implementation("org.litote.kmongo:kmongo:4.6.1")
 
-    shadowMe("dev.kord:kord-core:0.8.x-SNAPSHOT")
+    shadowMe("dev.kord:kord-core:0.8.x-SNAPSHOT") {
+        capabilities {
+            requireCapability("dev.kord:core-voice:0.8.x-SNAPSHOT")
+        }
+    }
     shadowMe("com.kotlindiscord.kord.extensions:kord-extensions:1.5.4-SNAPSHOT")
     shadowMe("io.github.qbosst:kordex-hybrid-commands:1.0.3-SNAPSHOT")
     shadowMe("dev.schlaubi.lavakord:kord:3.6.2")
@@ -47,7 +51,6 @@ dependencies {
     shadowMe("io.ktor:ktor-client-cio-jvm")
     shadowMe("io.ktor:ktor-client-content-negotiation-jvm")
 }
-
 
 application {
     mainClassName = "dev.shuuyu.MainKt"

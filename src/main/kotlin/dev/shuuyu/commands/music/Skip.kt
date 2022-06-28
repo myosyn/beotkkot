@@ -3,13 +3,13 @@ package dev.shuuyu.commands.music
 import com.kotlindiscord.kord.extensions.commands.Arguments
 import com.kotlindiscord.kord.extensions.commands.converters.impl.defaultingInt
 import com.kotlindiscord.kord.extensions.extensions.Extension
-import io.github.qbosst.kordex.commands.hybrid.publicHybridCommand
+import com.kotlindiscord.kord.extensions.extensions.publicSlashCommand
 
 class Skip : Extension() {
     override val name: String = "skip"
 
     override suspend fun setup() {
-        publicHybridCommand {
+        publicSlashCommand {
             name = "skip"
             description = "Skips the specified amount of songs in the queue."
 

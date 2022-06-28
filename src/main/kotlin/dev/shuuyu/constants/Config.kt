@@ -1,4 +1,4 @@
-package dev.shuuyu
+package dev.shuuyu.constants
 
 import com.kotlindiscord.kord.extensions.utils.env
 import com.kotlindiscord.kord.extensions.utils.envOrNull
