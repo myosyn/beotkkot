@@ -33,7 +33,7 @@ dependencies {
 
     implementation("org.litote.kmongo:kmongo:4.6.1")
 
-    shadowMe("dev.kord:kord-core:0.8.x-SNAPSHOT") {
+    shadowMe("dev.kord:kord-core:0.8.0-M15") {
         capabilities {
             requireCapability("dev.kord:core-voice:0.8.x-SNAPSHOT")
         }
