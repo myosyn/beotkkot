@@ -29,7 +29,7 @@ val shadowMe: Configuration by configurations.creating {
 
 dependencies {
     shadowMe("ch.qos.logback:logback-classic:1.2.11")
-    shadowMe("org.codehaus.groovy:groovy:3.0.11")
+    shadowMe("org.codehaus.groovy:groovy:3.0.12")
 
     implementation("org.litote.kmongo:kmongo:4.6.1")
 
